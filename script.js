@@ -2,7 +2,7 @@
             const tbodyEuropa = document.querySelector("#europa");
             const tbodyOtros = document.querySelector("#otros");
 
-            const ENDPOINT = "…";
+            const ENDPOINT = "https://api.myjson.online/v1/records/f5e8f691-c6c4-4713-9ef3-d1bcafae3b46";
 
             const paisesAmerica = ["Argentina", "Brazil", "Canada", "Chile", "Colombia", "Mexico", "United States"];
             const paisesEuropa = ["Austria", "Belgium", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany", "Ireland", "Italy", "Netherlands", "Sweden", "Switzerland", "United Kingdom"];
@@ -59,7 +59,7 @@
             function bolitas(x) {
                 var visual = "";
                 for (let i = 0; i < x; i++) {
-                    visual += " ● ";
+                    visual += '<span class="pictograma"></span>';
                 }
                 return "<span>" + visual + "</span>";
             }
